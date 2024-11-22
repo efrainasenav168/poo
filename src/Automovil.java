@@ -1,10 +1,51 @@
 public class Automovil {
-    String fabricante;
-    String modelo;
-    String color="griss";
-    int capacidadTanque=40;
-    double cilindrada;
-  // objeto que no retorna nada
+     private String fabricante;
+     private String modelo;
+    private String color="griss";
+     private int capacidadTanque=40;
+     private double cilindrada;
+
+    public String getFabricante() {
+        return fabricante;
+    }
+
+    public void setFabricante(String fabricante) {
+        this.fabricante = fabricante;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getCapacidadTanque() {
+        return capacidadTanque;
+    }
+
+    public void setCapacidadTanque(int capacidadTanque) {
+        this.capacidadTanque = capacidadTanque;
+    }
+
+    public double getCilindrada() {
+        return cilindrada;
+    }
+
+    public void setCilindrada(double cilindrada) {
+        this.cilindrada = cilindrada;
+    }
+
+    // objeto que no retorna nada
     public  String  detalle(){
         // variable local
         //String modelo="otro";
