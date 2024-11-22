@@ -2,6 +2,7 @@ public class Automovil {
     String fabricante;
     String modelo;
     String color="griss";
+    int capacidadTanque=40;
     double cilindrada;
   // objeto que no retorna nada
     public  String  detalle(){
@@ -28,5 +29,12 @@ public class Automovil {
          String frenar= this.frenar();
         return  acelerar + "\n" + frenar;
     }
+    public  float calcularConsumo(int km,  float porcentajeConsumo){
 
+        return  km/(this.capacidadTanque*porcentajeConsumo);
+    }
+    public  float calcularConsumo(int km,  int porcentajeConsumo){
+
+        return  km/(this.capacidadTanque*(porcentajeConsumo/100f));
+    }
 }

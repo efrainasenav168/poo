@@ -27,6 +27,8 @@ public class EjemploAutomovil {
         System.out.println(autoElec.aceleracion(300));
         System.out.println(autoElec.frenado());
         System.out.println(autoElec.aceleracionFrenado(5000));
+        System.out.println("el rendimieto de subaru es " + subaru.calcularConsumo(300, 0.6f));
+        System.out.println("el rendimieto de subaru es " + subaru.calcularConsumo(300, 60));
     }
 
 
