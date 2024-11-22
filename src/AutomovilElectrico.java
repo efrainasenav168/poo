@@ -12,5 +12,17 @@ public class AutomovilElectrico {
 
         return  sb.toString();
     }
+    public  String aceleracion ( int rpm){
+
+        return " el automovil electrio " +" "+this.marca + " "+ "tiene una acelarion de" + " "+ rpm+"rpm" ;
+    }
+    public  String frenado(){
+        return " el auto electrico " + " " + this.modelo + " "+ "esta frenando";
+    }
+    public  String  aceleracionFrenado(int rpm){
+        String aceleracion= this.aceleracion(rpm);
+        String frenado= this.frenado();
+        return  aceleracion + "\n" + frenado;
+    }
 
 }
